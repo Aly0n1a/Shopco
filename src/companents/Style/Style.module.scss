@@ -1,0 +1,54 @@
+.box {
+    // padding-top: 5px;
+    padding-bottom: 60px;
+    background-color: #f0f0f0;
+    border-radius: 40px;
+}
+
+.title {
+    color: black;
+    margin-top: 25px;
+    margin-left: 36px;
+}
+
+.cards {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "card1 card2 card2"
+        "card3 card3 card4";
+
+
+    div{
+        min-height: 289px;
+       border-radius: 20px;
+    }
+
+
+    .card1 {
+        grid-area: card1;
+        background-image: url(./card1.png);
+        margin-left: 40px;
+    }
+
+    .card2 {
+        grid-area: card2;
+        background-image: url(./card2.png);
+        margin-right: 40px;
+    }
+
+    .card3 {
+        grid-area: card3;
+        background-image: url(./card3.png);
+        margin-left: 40px;
+    }
+
+    .card4 {
+        grid-area: card4;
+        background-image: url(./card4.png);
+        margin-right: 40px;
+    }
+}
