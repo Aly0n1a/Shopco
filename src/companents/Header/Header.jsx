@@ -19,7 +19,7 @@ const Header = () => {
             <img
             onClick={toggleMenu}
               className={s.burger}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvJVY9J0u5f4eKb1CpggtpThzlSHCvLZ62w&s"
+              src="/burger-img.svg"
               alt=""
             />
             <Link className={s.logo} to="/">

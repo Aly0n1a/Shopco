@@ -3,6 +3,9 @@
     padding-bottom: 60px;
     background-color: #f0f0f0;
     border-radius: 40px;
+
+   
+   
 }
 
 .title {
@@ -20,12 +23,16 @@
     grid-template-areas:
         "card1 card2 card2"
         "card3 card3 card4";
-
+        
 
     div{
         min-height: 289px;
        border-radius: 20px;
+
+       
     }
+
+    
 
 
     .card1 {
@@ -50,5 +57,9 @@
         grid-area: card4;
         background-image: url(/card4.png);
         margin-right: 40px;
+    }
+
+    @media (max-width:700px) {
+        grid-template-columns: 1fr;
     }
 }
