@@ -3,9 +3,9 @@ import s from "./Header.module.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isActive, setIctive] = useState(false);
+  const [isActive, setActive] = useState(false);
   const toggleMenu = () => {
-    setIctive(!isActive)
+    setActive(!isActive)
   }
 
   const closeMenu = () => {
