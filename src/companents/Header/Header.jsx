@@ -1,36 +1,27 @@
-import React, { useState } from "react";
-import s from "./Header.module.scss";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import s from './Header.module.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [isActive, setActive] = useState(false);
+  const [isActive, setIsActive] = useState(false)
   const toggleMenu = () => {
-    setActive(!isActive)
+    setIsActive(!isActive)
   }
 
   const closeMenu = () => {
-    setIctive(false)
+    setIsActive(false)
   }
   return (
     <>
       <header className={s.header}>
         <div className="container">
           <nav className={s.nav}>
-            <img
-            onClick={toggleMenu}
-              className={s.burger}
-              src="/burger-img.svg"
-              alt=""
-            />
-            <Link className={s.logo} to="/">
+            <img className={s.burger} onClick={toggleMenu} src="/burger-img.svg" alt="" />
+            <Link onClick={closeMenu} to={'/'} className={s.logo}>
               SHOP.CO
             </Link>
-            <div
-              className={`${s.menu} ${
-                isActive ? s.active : null
-              }`}
-            >
-              <Link onClick={closeMenu} className={s.dropdown} to={"/shop"}>
+            <div className={`${s.menu} ${isActive ? s.active : null}`}>
+              <Link onClick={closeMenu} to={'/shop'} className={s.dropdown}>
                 Shop
                 <svg
                   width="16"
@@ -45,22 +36,22 @@ const Header = () => {
                   />
                 </svg>
                 <div>
-                  <Link to={"/"}>Casual</Link>
-                  <Link to={"/"}>Formal</Link>
-                  <Link to={"/"}>Party</Link>
-                  <Link to={"/"}>Gym</Link>
+                  <Link to={'/'}>Casual</Link>
+                  <Link to={'/'}>Party</Link>
+                  <Link to={'/'}>Formal</Link>
+                  <Link to={'/'}>GYM</Link>
                 </div>
-              </Link>
-
-              <Link onClick={closeMenu} to={"/Onsale"}>OnSale</Link>
-              <Link onClick={closeMenu} to={"/NewArrians"}>NewArrians</Link>
-              <Link onClick={closeMenu} to={"/Brands"}>Brands</Link>
+                </Link>
+              <Link onClick={closeMenu} to={'/'}>On Sale</Link>
+              <Link onClick={closeMenu} to={'/'}>New Arrivals</Link>
+              <Link onClick={closeMenu} to={'/'}>Brands</Link>
             </div>
-            <input type="text" className={s.search} />
+            <input placeholder='Search for products...' className={s.search} type="text" />
             <div className={s.box}>
               <img src="/icon-1.svg" alt="" />
               <img src="/icon-2.svg" alt="" />
             </div>
+
           </nav>
         </div>
       </header>
