@@ -8,6 +8,7 @@ import OnSale from './pages/OnSale'
 import Header from './companents/Header/Header'
 import Shop from "./pages/Shop"
 import Product from "./pages/Product"
+import Footer from "./companents/Footer/Footer"
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
   <Route path="/product/:id" element={<Product/>}/>
 
 </Routes>
-
+<Footer/>
 
 
 </>
