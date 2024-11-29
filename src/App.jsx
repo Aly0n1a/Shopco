@@ -7,6 +7,7 @@ import NewArrians from './pages/NewArrians'
 import OnSale from './pages/OnSale'
 import Header from './companents/Header/Header'
 import Shop from "./pages/Shop"
+import Product from "./pages/Product"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
   <Route path='/shop' element={<Shop/>} />
   <Route path='/newarrians' element={<NewArrians/>} />
   <Route path='/onsale' element={<OnSale/>} />
+  <Route path="/product/:id" element={<Product/>}/>
 
 </Routes>
 
