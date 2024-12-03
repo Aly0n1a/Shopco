@@ -2,6 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import Products from '/public/products.json'
 import ProductWrap from '../companents/ProductWrap/ProductWrap'
+import Reviews from '../companents/Reviews/Reviews'
+import Also from '../companents/Also/Also'
 
 const Product = () => {
 
@@ -12,6 +14,8 @@ const Product = () => {
   return (
     <>
     <ProductWrap product={product}/>
+    <Reviews/>
+    <Also/>
     </>
   )
 }
