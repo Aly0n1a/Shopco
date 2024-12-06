@@ -3,12 +3,35 @@
     // grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 .link{
     color: black;
     text-decoration: none;
 }
+
+.loadMore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.loadMoreButton {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 60px;
+    gap: 50px; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.5s ease; 
+}
+
+.loadMoreButton:hover {
+    background-color: rgba(0, 0, 0, 0.818);
+}
+
 
 

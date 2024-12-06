@@ -31,7 +31,7 @@ const Category = () => {
           {visibleProducts < Products.length && (
             <div className={s.loadMore}>
               <button onClick={loadMoreProducts} className={s.loadMoreButton}>
-                Еще
+              Показать больше
               </button>
             </div>
           )}
